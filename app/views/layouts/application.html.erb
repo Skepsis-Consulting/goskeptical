@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
+						  <meta charset="utf-8">
+						  <meta name="viewport" content="width=device-width, initial-scale=1">
+						  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+						  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+						  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <head>
-  <title>Goskeptical</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+						  <title>Goskeptical</title>
+						  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+						  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+						  <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<img src="<%= image_url 'logo_skepsis.png' %>" width="10%"  border="0" class="img-responsive">
+
+<div id="sectionbanner1" class="container-fluid">
+</div>
+
+<div class="container-fluid" id="sectionbanner2">
+</div>
+
+<div id="section1" class="container-fluid">
+		<%= yield %>
+		<br>
+		<br>
+		<br><br>
+		<br>
+		<br><br>
+
+
+</div>
+
+<div id="footer" class="container-fluid">
+		<center>Contact us: info@skepsis-consulting.com</center>
+		<center>www.skepsis-consulting.com</center>
+		<center>@goskeptical</center>
+</div>
+ 
+<style>
+
+@media only screen and (max-width: 767px) {
+
+   body { font-size: 1em; }
+
+}
+
+
+  #sectionbanner1 {padding-top:2%;height:7%;color: #000; background-color: #C41D2B;}
+  #sectionbanner2 {padding-top:2%;height:5%;color: #000; background-color: #ECCE46;}
+  #section1 	  {padding-top:50px;height:50%;color: #000; background-color: #fff;}
+  #footer 		  {position: bottom;padding-top:2%;padding-bottom:2%;height:10%;color: #fff; background-color: #C41D2B;}
+
+  </style>
 
 </body>
 </html>
