@@ -13,15 +13,16 @@
 </head>
 <body>
 
-<img src="<%= image_url 'logo_skepsis.png' %>" width="10%"  border="0" class="img-responsive">
-
-<div id="sectionbanner1" class="container-fluid">
+<div id="imagebanner" class="container">
+<img src="<%= image_url 'skepsis.png' %>"  class="img-responsive">
+</div>
+<div id="sectionbanner1" class="container">
+<center><img src="<%= image_url 'logo_goskeptical.png' %>" id="goskeptical" class="img-responsive"></center>
 </div>
 
-<div class="container-fluid" id="sectionbanner2">
-</div>
 
-<div id="section1" class="container-fluid">
+
+<div id="section1" class="container">
 		<%= yield %>
 		<br>
 		<br>
@@ -32,25 +33,24 @@
 
 </div>
 
-<div id="footer" class="container-fluid">
+<div id="footer" class="container">
 		<center>Contact us: info@skepsis-consulting.com</center>
 		<center>www.skepsis-consulting.com</center>
 		<center>@goskeptical</center>
 </div>
+
  
 <style>
 
-@media only screen and (max-width: 767px) {
+					@media only screen and (max-width: 800px) {
+					   body { font-size: 90%; }
+					}
+					  #goskeptical 	  {max-width: 80%; height: auto}
+					  #imagebanner 	  {margin-left: 9%;max-width: 80%; height: auto}
+					  #sectionbanner1 {height:7%;color: #FFF; background-color: #C41D2B; font-size: 300%; font-family: inglobal;}
+					  #section1 	  {padding-top:50px;height:50%;color: #000; background-color: #fff;}
+					  #footer 		  {position: bottom;padding-top:2%;padding-bottom:2%;height:10%;color: #fff; background-color: #C41D2B;}
 
-   body { font-size: 1em; }
-
-}
-
-
-  #sectionbanner1 {padding-top:2%;height:7%;color: #000; background-color: #C41D2B;}
-  #sectionbanner2 {padding-top:2%;height:5%;color: #000; background-color: #ECCE46;}
-  #section1 	  {padding-top:50px;height:50%;color: #000; background-color: #fff;}
-  #footer 		  {position: bottom;padding-top:2%;padding-bottom:2%;height:10%;color: #fff; background-color: #C41D2B;}
 
   </style>
 

@@ -19,3 +19,11 @@
     background-size: 100% 100%;}*/
 
 
+@font-face {
+  font-family: 'inglobal';
+  src: font-url('<%= asset_path("inglobal.tff") %>') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
