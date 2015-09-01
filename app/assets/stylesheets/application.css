@@ -13,6 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
-
-
+/* app/assets/stylesheets/application.css */
+  *= require kendo/kendo.common.min
+  *= require kendo/kendo.default.min 
