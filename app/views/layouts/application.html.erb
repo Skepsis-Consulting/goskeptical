@@ -7,45 +7,44 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-  @media only screen and (max-width: 768px) {
-  // styles here will display for window widths 768px and less
-} // end of media query
-  body {
-      position: relative; 
-  }
-  .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-  .navbar {
-      margin-bottom: 0px;
-  }
-  .affix ~ .container {
-     position: relative;
-     top: 50px;
-  }
-  #section1 {padding-top:2%;height:auto;color: #000; background-color: #fff;}
-  #section2 {height:auto;color: #fff; background-color: #C41D2B;}
-  #section3 {padding-top:2%;height:500px;color: #000; background-color: #fff;}
-  #section42 {padding-top:2%;padding-bottom: 2%;height:10%;color: #fff; background-color: #C41D2B;}
-  </style>
+    <style>
+      @media only screen and (max-width: 768px) {
+                          } 
+      body {
+          position: relative; 
+      }
+
+
+
+      .affix ~ .container {
+         position: relative;
+         top: 50px;
+      }
+      #logo {padding-top:2%;height:auto;color: #000; background-color: #fff;width: 90%}
+      #banner {height:auto;color: #fff; background-color: #C41D2B;width: 90%}
+      #contenido {padding-top:2%;height:500px;color: #000; background-color: #fff;}
+      #footer {padding-top:2%;padding-bottom: 2%;height:10%;width: 90%;color: #fff; background-color: #C41D2B;line-height: 70%;}
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div id="section1" class="container">
-        <img src="<%= image_url 'skepsis.png' %>" max-width="100%" id="skepsis" class="img-responsive">
+
+    <div id="logo" class="container">
+        <img src="<%= image_url 'skepsis.png' %>"  id="skepsis" class="img-responsive" alt="Skepsis">
     </div>
-    <div id="section2" class="container">
-        <center><img src="<%= image_url 'logo_goskeptical2.png' %>" id="goskeptical" max-width="90%" class="img-responsive"></center>
+    <div id="banner" class="container" align="center">
+        <img src="<%= image_url 'goskeptical.png' %>" id="goskeptical"  class="img-responsive" alt="GOSKEPTICAL">
     </div>
-    <div id="section3" class="container">
+    <div id="contenido" class="container">
         <%= yield %>
     </div>
-    <div id="section42" class="container">
-        <center>Contact us: info@skepsis-consulting.com</center>
-        <center>www.skepsis-consulting.com</center>
-        <center>@goskeptical</center>
+
+
+    <div id="footer" class="container" align="center">
+        <p>Contact us: info@skepsis-consulting.com</p>
+        <p>www.skepsis-consulting.com</p>
+        <p>@goskeptical</p>
     </div>
-</body>
-</html>
+
+
+
+
