@@ -8,6 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style>
+
       @media only screen and (max-width: 768px) {
                           } 
       body {
@@ -23,55 +24,91 @@
         background-color: #fff;
         width: 90%;
       }
-      #banner {
-        height:auto;
-        color: #fff;
-        background-color: #C41D2B;
-        width: 90%;
+
       }
       #contenido {
         padding-top:2%;
-        height:500px;color:#000;
+        height:500px;
+        color:#000;
         background-color:#fff;
         text-align: center
       }
       #footer {
+
         margin-top: 3%;
         padding-top:2%;
         padding-bottom:2%;
         height:10%;
         width: 90%;
         color: #fff;
-        background-color:#C41D2B;
         line-height: 70%;
-        text-align: center
+        text-align: center;
+      background: rgba(188,23,39,1);
+    background: -moz-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(188,23,39,1)), color-stop(100%, rgba(162,22,36,1)));
+    background: -webkit-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+    background: -o-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+    background: -ms-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+    background: linear-gradient(to bottom, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc1727', endColorstr='#a21624', GradientType=0 );
       }
       #banner img
       {
         margin-left: auto;
-        margin-right:auto
-      }
+        margin-right:auto;
 
+      }
+    body {
+        background: rgba(249,250,252,1);
+      background: -moz-linear-gradient(top, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,250,252,1)), color-stop(100%, rgba(234,239,245,1)));
+      background: -webkit-linear-gradient(top, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
+      background: -o-linear-gradient(top, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
+      background: -ms-linear-gradient(top, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
+      background: linear-gradient(to bottom, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fafc', endColorstr='#eaeff5', GradientType=0 );
+    } 
+
+    #footer a:link
+      {
+        color: #fff;
+      }
+      a:visited{
+
+      color: #fff;
+
+      }
+      a:hover{
+
+      color: #fff;
+
+
+      }
+      #grafico {
+        position: absolute;
+        bottom: 16%;
+        left: 8%
+      }
     </style>
 </head>
 
 <body>
-    <div id="logo" class="container">
-         <img src="<%= image_url 'skep.png' %>" class="img-responsive" alt="Skepsis">
+    <div id="banner"class="container" style= "width:92%">
+         <img src="<%= image_url 'headercompleto.png' %>"class="img-responsive"alt="Skepsis" >
     </div>
-    <div id="banner" class="container">
-         <img src="<%= image_url 'goskeptical.png' %>" class="img-responsive" alt="Goskeptical">
-    </div>
-    <div id="contenido" class="container">
+
+    <div id="contenido"class="container">
         <%= yield %>
+        
     </div>
+<br><br><br><br><br><br><br><br><br>
+<img src="<%= image_url 'grafico.png' %>"class="img-responsive" alt="grafico" id="grafico">
+    <div id="footer"class="container" style="font-family:Open Sans Regular">
+        <p><b>Contact us</b>: info@skepsis-consulting.com</p>
+        <p><a href="http://skepsis-consulting.com/web/">www.skepsis-consulting.com</a></p>
+        <p><a href="http://twitter.com/goskeptical">@goskeptical</a></p>
 
-
-    <div id="footer" class="container">
-        <p>Contact us: info@skepsis-consulting.com</p>
-        <p>www.skepsis-consulting.com</p>
-        <p>@goskeptical</p>
-    </div>
+</div>
 </body>
 
 
