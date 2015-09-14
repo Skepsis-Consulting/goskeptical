@@ -1,22 +1,89 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="font-family:verdana;font-size:130%">Skepsis Consulting's Unit for SaaS Development</p>
-<br>
-<br>
-<br>
-<div id="container">
-<img src="<%= image_url 'try.png' %>" class="img-responsive" alt="Try our apps">
-<br>
-<a href= https://lit-inlet-8072.herokuapp.com/views/overview><img src="<%= image_url 'scout.png' %>"  alt="Scout" class="img-responsive"></a>
-</div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="container-fluid">
+<img src="<%= image_url 'graficot1.png' %>"class="img-responsive" alt="grafico" id="grafico">
+</div>
+<b><p style="font-family:open sans;font-size:160%" id="unit">Skepsis Consulting's Unit for SaaS Development</p></b>
+<div id="container">
+<br>
+<p style="font-family:inglobal;font-size:160%" id="app">TRY OUR APPS!</p>
+<a href= https://lit-inlet-8072.herokuapp.com/views/overview><img src="<%= image_url 'scout.png' %>"alt="Scout" class="img-responsive" id="scout"></a>
+</div>
+<br>
+<br>
 <style>
+
+      @media only screen and (max-width: 768px) {
+        body {
+         		font-size: 1em;
+         	 }
+        img #grafico  { 
+        		width: 20%;
+        		left:5%;
+        	 }
+       		#scout {
+
+        		width: 20%;
+        		left: 22%;
+        }
+
+             									 } 
 		#container img
 		{
 			margin-left: auto;
-		  	margin-right:auto
+		  	margin-right:auto;
+		}
+
+
+		#unit
+		{
+			color: #b2b2b2;
+			position: absolute;
+			top: 15%;
+			left: 11%;
+		}
+
+		#app
+		{
+			color: #bc1727;
+			text-align: right;
+			right: 31%;
+			top:40%;
+			position: absolute;
+		}
+
+		#grafico
+		{
+			position:absolute; 
+			top:32%; right:39%; 
+			width: 28%
+		}
+
+		#scout
+		{
+			position:absolute;
+			top:45%; right:30%;
+			width: 10%
 		}
 </style>
