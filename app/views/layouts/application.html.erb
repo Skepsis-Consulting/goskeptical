@@ -7,59 +7,100 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<body>
+<!-- ESTILOS PARA MOVILES -->
     <style>
+          @media only screen and (max-width: 768px) {
+        
+          #unitm
+          {
+            color: #bc1727;
+            text-align: center
+          }
+              
+          #jumbotronm{
+          background-color: #edeff2;
+          border-top-style: solid;
+          border-bottom-style: solid;
+          border-color: gray;
+          border-width: 1px;
+          }
+          #jumbotron{
+            display: none;
+          }
+        #espacio{
+          display: none;
+        }
+        #footer{
+          display: none;
+        }
+        #headercomp{
+          display: none;
+        }
 
-      @media only screen and (max-width: 768px) {
+        #graficom{
+          max-width: 50%;
+          position: absolute;
+          left: 30%;
+          right: 30%;
+          bottom: 15%
+
+        }
+        
+        #grafico{
+          display: none;
+        }
+        #banner2{
+          font-size: 1.5em;
+          border-radius: 0px 0px 20px 20px ;
+          text-align: center;
+          color: #bc1727;
+          padding-top:2%;
+          padding-bottom:2%;
+          height: 100%;
+          background: rgba(249,200,2,1);
+          background: -moz-linear-gradient(top, rgba(249,200,2,1) 0%, rgba(216,169,13,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,200,2,1)), color-stop(100%, rgba(216,169,13,1)));
+          background: -webkit-linear-gradient(top, rgba(249,200,2,1) 0%, rgba(216,169,13,1) 100%);
+          background: -o-linear-gradient(top, rgba(249,200,2,1) 0%, rgba(216,169,13,1) 100%);
+          background: -ms-linear-gradient(top, rgba(249,200,2,1) 0%, rgba(216,169,13,1) 100%);
+          background: linear-gradient(to bottom, rgba(249,200,2,1) 0%, rgba(216,169,13,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c802', endColorstr='#d8a90d', GradientType=0 );
+        }
+
+        #footerm{
+        margin-top: 3%;
+        padding-top:2%;
+        padding-bottom:2%;
+        height:100%;
+        color: #fff;
+        line-height: 70%;
+        text-align: center;
+        background: rgba(188,23,39,1);
+        background: -moz-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(188,23,39,1)), color-stop(100%, rgba(162,22,36,1)));
+        background: -webkit-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: -o-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: -ms-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: linear-gradient(to bottom, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc1727', endColorstr='#a21624', GradientType=0 );
+        }
+
                           } 
-      body {
+    </style>
+    <!-- ESTILOS GENERAL -->
+    <style>
+body {
           position: relative; 
+
       }
+
       .affix ~ .container {
         position: relative;
         top: 50px;
       }
-      #logo {
-        height:auto;
-        color: #000;
-        background-color: #fff;
-        width: 90%;
-      }
-
-      }
-      #contenido {
-        padding-top:2%;
-        height:500px;
-        color:#000;
-        background-color:#fff;
-        text-align: center
-      }
-      #footer {
-
-        margin-top: 3%;
-        padding-top:2%;
-        padding-bottom:2%;
-        height:10%;
-        width: 90%;
-        color: #fff;
-        line-height: 70%;
-        text-align: center;
-      background: rgba(188,23,39,1);
-    background: -moz-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(188,23,39,1)), color-stop(100%, rgba(162,22,36,1)));
-    background: -webkit-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
-    background: -o-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
-    background: -ms-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
-    background: linear-gradient(to bottom, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc1727', endColorstr='#a21624', GradientType=0 );
-      }
-      #banner img
-      {
-        margin-left: auto;
-        margin-right:auto;
-
-      }
-    body {
-        background: rgba(249,250,252,1);
+      body {
+      background: rgba(249,250,252,1);
       background: -moz-linear-gradient(top, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
       background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,250,252,1)), color-stop(100%, rgba(234,239,245,1)));
       background: -webkit-linear-gradient(top, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
@@ -68,7 +109,6 @@
       background: linear-gradient(to bottom, rgba(249,250,252,1) 0%, rgba(234,239,245,1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fafc', endColorstr='#eaeff5', GradientType=0 );
     } 
-
     #footer a:link
       {
         color: #fff;
@@ -84,26 +124,118 @@
 
 
       }
-      #grafico {
+    </style>
+    <!--                                                   ESTILOS PARA PC                -->
+    <style>
+
+@media only screen and (min-width: 768px) {
+
+      #banner img
+      {
+        margin-left: auto;
+        margin-right:auto;
+
+      }
+
+      #banner
+      {
+        width:92%;
+      }
+      #jumbotronm{
+        display: none;
+      }
+
+
+      #footerm{
+        display: none;
+      }
+      #banner2 {
+        display: none;
+      }
+      #espaciom{
+        display: none;
+      }
+        #grafico {
         position: absolute;
         bottom: 16%;
-        left: 8%
+        left: 0%;
+        width:100%;
       }
+      #footer {
+
+        margin-top: 3%;
+        padding-top:2%;
+        padding-bottom:2%;
+        height:10%;
+        width: 90%;
+        color: #fff;
+        line-height: 70%;
+        text-align: center;
+        background: rgba(188,23,39,1);
+        background: -moz-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(188,23,39,1)), color-stop(100%, rgba(162,22,36,1)));
+        background: -webkit-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: -o-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: -ms-linear-gradient(top, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        background: linear-gradient(to bottom, rgba(188,23,39,1) 0%, rgba(162,22,36,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc1727', endColorstr='#a21624', GradientType=0 );
+      }
+
+    #unit
+    {
+      color: #b2b2b2;
+      text-align: center
+    }
+    #graficom{
+      display: none;
+    }
+
+    }
     </style>
 </head>
 
-<body>
-    <div id="banner"class="container" style= "width:92%">
-         <img src="<%= image_url 'headercompleto.png' %>"class="img-responsive"alt="Skepsis" >
+
+    <div id="banner2" class="container-fluid" style="font-family:inglobal; font-size:350%">
+    <p>goskeptical</p>
     </div>
 
+    <div id="banner"class="container" style="width:100%">
+         <img src="<%= image_url 'headercompleto.png' %>"class="img-responsive"alt="Skepsis" id="headercomp">
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="jumbotron">
+<b><p style="font-family:open sans;font-size:160%" id="unit">Skepsis Consulting's Unit for SaaS Development</p></b>
+</div>
+<div id="jumbotronm">
+<b><h1 style="font-family:open sans;font-size:160%" id="unitm">Skepsis Consulting's Unit for SaaS Development</h1></b>
+</div>
     <div id="contenido"class="container">
         <%= yield %>
         
     </div>
+    <div id="espacio">
 <br><br><br><br><br><br><br><br><br>
+</div>
+<div id="espaciom">
+<br><br><br><br><br><br><br><br>
+</div>
+
 <img src="<%= image_url 'grafico.png' %>"class="img-responsive" alt="grafico" id="grafico">
+<div id="graficom">
+<img src="<%= image_url 'graficot2.png' %>"class="img-responsive" alt="grafico">
+</div>
     <div id="footer"class="container" style="font-family:Open Sans Regular">
+        <p><b>Contact us</b>: info@skepsis-consulting.com</p>
+        <p><a href="http://skepsis-consulting.com/web/">www.skepsis-consulting.com</a></p>
+        <p><a href="http://twitter.com/goskeptical">@goskeptical</a></p>
+
+</div>
+
+<div id="footerm"class="container-fluid" style="font-family:Open Sans Regular">
         <p><b>Contact us</b>: info@skepsis-consulting.com</p>
         <p><a href="http://skepsis-consulting.com/web/">www.skepsis-consulting.com</a></p>
         <p><a href="http://twitter.com/goskeptical">@goskeptical</a></p>
