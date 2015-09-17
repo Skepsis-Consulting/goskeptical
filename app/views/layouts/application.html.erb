@@ -16,6 +16,9 @@
         		background-color: #fff;
         	}
 
+          #scout{
+            width: 150px;
+          }
           #unitm
           {
             color: #bc1727;
@@ -54,14 +57,20 @@
         #grafico{
           display: none;
         }
-        #banner2 img
+        #log
       {
-      	position: fixed;
-      	left: 0%;
-        width: 800px;
 
+        width: 45px;
       }
+        #logm{
+          background-color: #000;
+  
+        }
 
+      #banner2{
+        text-align: center;
+        color: #bc1727;
+      }
         #footerm{
         margin-top: 3%;
         padding-top:2%;
@@ -82,7 +91,6 @@
             .com {
       display: none;
     }
-
 
                           } 
     </style>
@@ -144,6 +152,9 @@ body {
 	#log {
 		display: none;
 	}
+  #logm{
+    display: none;
+  }
       #banner img
       {
         margin-left: auto;
@@ -205,28 +216,30 @@ body {
     #graficom{
       display: none;
     }
-
+.com{
+  display: none;
+}
     }
     </style>
 </head>
 
-    <div id="banner2" class="container-fluid" style="font-family:inglobal; font-size:180%">
-    <img src="<%= image_url 'bannerm3.png' %>"class="img-responsive"alt="goskepti" id="bann2">
-    </div>
+
     <div id="banner"class="container" style="width:100%">
          <img src="<%= image_url 'headercompleto.png' %>"class="img-responsive"alt="Skepsis" id="headercomp">
     </div>
 
-<br>
-<br>
-<br>
-	<center><img src="<%= image_url 'skepsism.png' %>"class="img-responsive"alt="logo" id="log"></center>
 
+<div id="logm" class="container-fluid">
+	<center><img src="<%= image_url 'skepsism.png' %>"class="img-responsive"alt="logo" id="log"></center>
+  </div>
+    <div id="banner2" class="container-fluid" style="font-family:inglobal; font-size:180%">
+    <p style="font-family:inglobal;font-size:180%">goskeptical</p>
+    </div>
 <div id="jumbotron">
-<b><p style="font-family:open sans;font-size:160%" id="unit">Skepsis Consulting's Unit for SaaS Development</p></b>
+<b><p style="font-family:inglobal;font-size:160%" id="unit">Skepsis Consulting's Unit for SaaS Development</p></b>
 </div>
 <div id="jumbotronm">
-<b><h1 style="font-family:open sans;font-size:160%" id="unitm">Skepsis Consulting's Unit for SaaS Development</h1></b>
+<b><h1 style="font-family:inglobal;font-size:160%" id="unitm">Skepsis Consulting's Unit for SaaS Development</h1></b>
 </div>
     <div id="contenido"class="container">
         <%= yield %>
@@ -236,7 +249,7 @@ body {
 <br><br><br><br><br><br><br><br><br>
 </div>
 <div id="espaciom">
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 </div>
 
 <img src="<%= image_url 'grafico.png' %>"class="img-responsive" alt="grafico" id="grafico">
