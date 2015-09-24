@@ -15,7 +15,9 @@
         	body {
         		background-color: #fff;
         	}
-
+          #esp{
+            display: none;
+          }
           #scout{
             width: 150px;
           }
@@ -187,7 +189,6 @@ body {
         width:100%;
       }
       #footer {
-
         margin-top: 3%;
         padding-top:2%;
         padding-bottom:2%;
@@ -211,7 +212,7 @@ body {
       color: #b2b2b2;
       position: absolute;
       left: 9%;
-      bottom: 82%;
+      bottom: 79%;
     }
     #graficom{
       display: none;
@@ -225,7 +226,8 @@ body {
 
 
     <div id="banner"class="container" style="width:100%">
-         <img src="<%= image_url 'headercompleto.png' %>"class="img-responsive"alt="Skepsis" id="headercomp">
+         <img src="<%= image_url 'headercompleto.png' %>"class="img-responsive"alt="Skepsis" id="headercomp"/>
+
     </div>
 
 
@@ -240,6 +242,9 @@ body {
 </div>
 <div id="jumbotronm">
 <b><h1 style="font-family:inglobal;font-size:160%" id="unitm">Skepsis Consulting's Unit for SaaS Development</h1></b>
+</div>
+<div id="esp">
+<br><br><br>
 </div>
     <div id="contenido"class="container">
         <%= yield %>
@@ -270,7 +275,7 @@ body {
         <p><a href="http://twitter.com/goskeptical">@goskeptical</a></p>
 
 </div>
+<%= render 'layouts/footer' %>
 </body>
-
-
+</html>
 
