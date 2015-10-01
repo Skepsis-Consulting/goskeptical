@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require ahoy
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-//= require google/apis/drive_v2
