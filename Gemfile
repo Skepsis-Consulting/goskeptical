@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-
-gem 'google-analytics-rails'
 gem 'ahoy_matey'
+gem 'google-analytics-rails'
 gem 'google-api-client', '0.9.pre3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'

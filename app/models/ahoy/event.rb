@@ -1,12 +1,8 @@
-class Ahoy::Event
-  include Mongoid::Document
+module Ahoy
+  class Event < ActiveRecord::Base
+    self.table_name = "ahoy_events"
 
-  # associations
-  belongs_to :visit
-  belongs_to :user
-
-  # fields
-  field :name, type: String
-  field :properties, type: Hash
-  field :time, type: Time
+    belongs_to :visit
+    belongs_to :user
+  end
 end
