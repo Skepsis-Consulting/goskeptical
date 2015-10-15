@@ -55,7 +55,13 @@ function getIp(){
 
 
 <!--    TABLA CON TODA LA INFORMACION DE VISITANTE !-->
-<table>
+
+<script type="text/javascript">
+  var request = request.env;
+  document.write (request)
+</script>
+
+<table border="1" id="table">
 <th>key</th>
 <th>Value</th>
 <% for item in request.env %>
@@ -65,7 +71,37 @@ function getIp(){
 </tr>
 <% end %>
 </table> 
+
+
+ <% tabla = Hash.new %>
+ <% hash.each do |item, array| %>
+    puts "#{key}-----"
+      puts array
+    end
+ <%end%>
+
+
+
+
+<% form_for :request(env) do |f| %>
+1  <%= f.text_field :key %><br/>
+<%= f.submit %>
+<% end %> 
 <!--    FIN DE LA TABLA CON TODA LA INFORMACION DE VISITANTE !-->
+
+
+
+<script type="text/javascript">
+var env = request.env;
+document.write ("Probando ",env);
+</script>
+
+
+
+
+
+
+
 
 <!--                    obtener ip                     !-->
 <br><br><br><br><br><br><br><br><br><br>
@@ -80,22 +116,24 @@ function getIp(){
 </script>
 
 <!--                fin obtener ip                      !-->
+
+
 <br>
 <!--                Obtener username, visitor, utma, utmz, utmcsr, !-->
 <script type="text/javascript">
 	var cookie = document.cookie;
 	document.write("datos de visitante: ",cookie)
 </script>
+<br>
 <!--               FIN Obtener username, visitor, utma, utmz, utmcsr, !-->
 
 
 
 <script type="text/javascript">
     var referrer = document.referrer;
+    document.write("Vienes de esta pagina: ",referrer);
 </script>
-<script type="text/javascript">
-    document.write("Vienes de esta pagina: ",referrer)
-</script>
+
 <br>
 <br>
 <br>
@@ -138,6 +176,10 @@ document.write("Referring page: <a href="+referrer+">"+referrer+"</a> <br>");
 document.write("User agent string: "+useragent+" <p>");
  
 </SCRIPT>
+
+
+
+
 <!--                                 contador                    !-->
 <script type="text/javascript">
   $(window).on('unload', window_unfocused);
