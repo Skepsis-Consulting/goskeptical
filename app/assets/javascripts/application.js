@@ -16,3 +16,6 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require google/apis/drive_v2
+//= require "rubygems"
+//=require "browser"
+//=require "useragent"

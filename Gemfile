@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'useragent'
+gem 'browser'
 gem 'ahoy_matey'
 gem 'google-analytics-rails'
 gem 'google-api-client', '0.9.pre3'

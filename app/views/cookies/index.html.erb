@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cookies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cookies.each do |cooky| %>
+      <tr>
+        <td> <%= cooky.id %></td>
+        <td> <%= cooky.ip %> </td>
+        <td> <%= cooky.ref %></td>
+        <td> <%= cooky.time %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

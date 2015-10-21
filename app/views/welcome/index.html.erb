@@ -73,20 +73,6 @@ function getIp(){
 </table> 
 
 
- <% tabla = Hash.new %>
- <% hash.each do |item, array| %>
-    puts "#{key}-----"
-      puts array
-    end
- <%end%>
-
-
-
-
-<% form_for :request(env) do |f| %>
-1  <%= f.text_field :key %><br/>
-<%= f.submit %>
-<% end %> 
 <!--    FIN DE LA TABLA CON TODA LA INFORMACION DE VISITANTE !-->
 
 
@@ -221,5 +207,18 @@ function window_unfocused(eo) {
     }
 }
 </script>
+  <%= timeStart = Time.now%>
+  <%= form_for Cooky.new do |f| %>  
+  <div class="field"> 
+    <%= f.text_area  :ip, :value => request.location.city.to_s%><br> 
+    <%= f.text_area  :ref, :value => (request.referer.to_s != "") ? request.referer.to_s : "null" %><br> 
+    <%= f.text_area  :time, :value => timeStart%><br> 
+  </div> 
+  <div class="actions"> 
+    <%= f.submit "Create" %> 
+  </div> 
+<% end %>
+
+<%= request.env["HTTP_USER_AGENT"].split(/[^\w|.]/) %>
 
 <!--                              fin   contador                    !-->
